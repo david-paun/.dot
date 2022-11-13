@@ -4,7 +4,7 @@ echo "Installing packages:"
 sudo pacman -S dunst i3 kitty polybar rofi
 
 echo "Moving dot files to the home folder:"
-mv .dots ~/
+mv .dot ~/
 
 echo "Creating symlinks: \n WARNING: Might require manual intervention for some users!"
 ln -s ~/.dot/dunst ~/.config
