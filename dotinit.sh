@@ -8,13 +8,15 @@ echo "Copying dot files to the home folder:"
 mv ../.dot ~/
 
 echo "Creating symlinks: \n WARNING: Might require manual intervention for some users!"
-ln -s ~/.dot/dunst ~/.config/
-ln -s ~/.dot/i3 ~/.config/
-ln -s ~/.dot/kitty ~/.config/
-ln -s ~/.dot/polybar ~/.config/
-ln -s ~/.dot/rofi ~/.config/
-ln -s ~/.dot/home-dots/.bash_profile ~/
-ln -s ~/.dot/home-dots/.bashrc ~/
-ln -s ~/.dot/home-dots/.xinitrc ~/
-ln -s ~/.dot/flameshot ~/.config/
+ln -sf ~/.dot/dunst ~/.config/
+ln -sf ~/.dot/i3 ~/.config/
+ln -sf ~/.dot/kitty ~/.config/
+ln -sf ~/.dot/polybar ~/.config/
+ln -sf ~/.dot/rofi ~/.config/
+ln -sf ~/.dot/system-dots/.bash_profile ~/
+ln -sf ~/.dot/system-dots/.bashrc ~/
+ln -sf ~/.dot/system-dots/.xinitrc ~/
+ln -sf ~/.dot/flameshot ~/.config/
+sudo ln -sf ~/.dot/system-dots/00-keyboard.conf /etc/X11/xorg.conf.d/
+sudo ln -sf ~/.dot/system-dots/30-touchpad.conf /etc/X11/xorg.conf.d/
 
