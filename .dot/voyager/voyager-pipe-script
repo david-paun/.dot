@@ -1,0 +1,1 @@
+while : ; do eval $(cat /usr/src/pipes/hostpipe); done

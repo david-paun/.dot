@@ -23,11 +23,15 @@ font-3 = Font Awesome 6 Free Regular:pixelsize=12;3
 font-4 = Font Awesome 6 Free Solid:pixelsize=12;3
 font-5 = Font Awesome 6 Brands:pixelsize=12;3
 font-6 = Weather Icons:size=12;2
-modules-left = powermenu filesystem memory cpu custom-cpu-temp custom-updates xbacklight custom-weather
+modules-left = powermenu filesystem memory cpu custom-cpu-temp custom-updates xbacklight custom-weather custom-battery-watchdog
 modules-center = i3
-modules-right =  pulseaudio battery xkeyboard eth date
+modules-right =  custom-bluetooth pulseaudio battery xkeyboard eth date
 cursor-click = pointer
 cursor-scroll = ns-resize
+[module/custom-battery-watchdog]
+type = custom/script
+exec = ~/.config/polybar/scripts/battery-watchdog.sh
+interval = 60
 [module/custom-cpu-temp]
 type = custom/script
 exec = ~/.config/polybar/scripts/cputemp.sh
@@ -176,3 +180,9 @@ menu-0-1 = "%{F#7FB77E}%{F-} "
 menu-0-1-exec = systemctl reboot
 menu-0-2 ="%{F#F6D186}%{F-} "
 menu-0-2-exec = systemctl suspend
+[module/custom-bluetooth]
+type = custom/script
+exec = ~/.config/polybar/scripts/bluetooth.sh
+interval = 60
+format = <label>
+label = "%output%"

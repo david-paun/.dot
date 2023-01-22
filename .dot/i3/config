@@ -212,6 +212,6 @@ gaps outer 5
 smart_gaps on
 
 #shuttler's brightness
-bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5%
-bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
+bindsym $mod+m exec --no-startup-id brightnessctl set +5%
+bindsym $mod+n exec --no-startup-id brightnessctl set 5%-
 
