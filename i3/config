@@ -176,6 +176,7 @@ bindsym $mod+Shift+p exec --no-startup-id flameshot gui
 #shuttler's autostart
 exec --no-startup-id "redshift -x && redshift -O 4500"
 exec --no-startup-id "/usr/bin/polkit-dumb-agent"
+exec --no-startup-id "blueman-applet"
 exec_always --no-startup-id "dunst"
 exec_always --no-startup-id "feh --bg-fill ~/.config/i3/curr_bg"
 exec_always --no-startup-id "$HOME/.config/polybar/scripts/launch.sh"
