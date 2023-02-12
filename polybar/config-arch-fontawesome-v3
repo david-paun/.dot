@@ -19,12 +19,9 @@ module-margin-right = 1
 font-0 = JetBrainsMono:style=semibold:fontformat=truetype:size=10:antialias=true;2
 font-1 = JetBrainsMono:style=bold:fontformat=truetype:size=10:antialias=true;2
 font-2 = siji:pixelsize=10;1
-font-3 = fontawesome-fonts:pixelsize=12;3
-font-4 = fontawesome-fonts-web:pixelsize=12;3
-font-5 = fontawesome5-fonts:pixelsize=12;3
-font-7 = fontawesome5-brands-fonts:pixelsize=12;3
-font-8 = fontawesome5-fonts-web:pixelsize=12;3
-font-9 = fontawesome5-free-fonts:pixelsize=12;3
+font-3 = Font Awesome 6 Free Regular:pixelsize=12;3
+font-4 = Font Awesome 6 Free Solid:pixelsize=12;3
+font-5 = Font Awesome 6 Brands:pixelsize=12;3
 font-6 = Weather Icons:size=12;2
 modules-left = powermenu filesystem memory cpu custom-cpu-temp custom-updates xbacklight custom-weather custom-battery-watchdog
 modules-center = i3
@@ -116,7 +113,7 @@ interval = 2
 label = "  %percentage_used:2%% "
 [module/eth]
 type = internal/network
-interface = wlp0s20f3
+interface = wlan0
 interval = 3.0
 label-connected = " %{F#7FB77E}%{F-} %upspeed:2%  %{F#FF6961}%{F-} %downspeed:2% "
 label-disconnected = "%{F#FF6961}%{F-} "
@@ -171,15 +168,15 @@ label-full = " %percentage%% "
 type = custom/menu
 expand-right = true
 format-spacing = 1
-label-open = " %{F#FF6961}%{F-}  %{F#9a9a9a}%{F-}  %{F#9a9a9a}%{F-}  %{F#9a9a9a}%{F-} "
+label-open = " %{F#FF6961}%{F-}  %{F#9a9a9a}%{F-}  %{F#9a9a9a}%{F-}  %{F#9a9a9a}%{F-} "
 label-open-foreground = #FF6961
-label-close = " "
+label-close = " "
 label-close-foreground = #9a9a9a
 label-separator = ""
 label-separator-foreground = #666666
 menu-0-0 = " %{F#94D0CC}%{F-} "
 menu-0-0-exec = systemctl poweroff
-menu-0-1 = "%{F#7FB77E}%{F-} "
+menu-0-1 = "%{F#7FB77E}%{F-} "
 menu-0-1-exec = systemctl reboot
 menu-0-2 ="%{F#F6D186}%{F-} "
 menu-0-2-exec = systemctl suspend

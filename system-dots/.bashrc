@@ -27,8 +27,10 @@ alias dockeron="dockerOn"
 alias dockeroff="dockerOff"
 alias python2="python2.7"
 
-alias firebase="`npm config get prefix`/bin/firebase"
+alias firebase='npm config get prefix /bin/firebase'
 
-export PATH="/usr/lib/node_modules/node/bin:$PATH"
+#export PATH="/usr/lib/node_modules/node/bin:$PATH"
 
 #export PATH=$PATH:"/usr/local/lib/python2.7"
+
+export PATH="/usr/local/bin:$PATH"

@@ -20,4 +20,6 @@ ln -sf ~/.dot/flameshot ~/.config/
 sudo ln -sf ~/.dot/system-dots/00-keyboard.conf /etc/X11/xorg.conf.d/
 sudo ln -sf ~/.dot/system-dots/30-touchpad.conf /etc/X11/xorg.conf.d/
 ln -sf ~/.dot/geany/colorschemes ~/.config/geany/
+mkdir ~/USB
+ln -sf /run/media/shuttler/ ~/USB/
 #rm -rf /path/to/A
