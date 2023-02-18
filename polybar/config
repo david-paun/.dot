@@ -26,7 +26,7 @@ font-7 = fontawesome5-brands-fonts:pixelsize=12;3
 font-8 = fontawesome5-fonts-web:pixelsize=12;3
 font-9 = fontawesome5-free-fonts:pixelsize=12;3
 font-6 = Weather Icons:size=12;2
-modules-left = powermenu filesystem memory cpu custom-cpu-temp custom-updates xbacklight custom-weather custom-battery-watchdog
+modules-left = powermenu filesystem memory cpu custom-cpu-temp custom-updates backlight custom-weather custom-battery-watchdog
 modules-center = i3
 modules-right =  custom-bluetooth pulseaudio battery xkeyboard eth date
 cursor-click = pointer
@@ -93,8 +93,10 @@ label-visible-padding = 1
 label-urgent = "%{T2}%index%%{T-}"
 label-urgent-foreground = #FF6961
 label-urgent-padding = 1
-[module/xbacklight]
-type = internal/xbacklight
+[module/backlight]
+type = internal/backlight
+card = intel_backlight
+enable-scroll = true
 format = <ramp> <label>
 label = "%percentage%% "
 ramp-0 = " %{F#FF6961}%{F-}"

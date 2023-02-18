@@ -34,3 +34,4 @@ alias firebase='npm config get prefix /bin/firebase'
 #export PATH=$PATH:"/usr/local/lib/python2.7"
 
 export PATH="/usr/local/bin:$PATH"
+alias code="flatpak run com.vscodium.codium"
