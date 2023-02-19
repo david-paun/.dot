@@ -167,7 +167,7 @@ bindsym $mod+r mode "resize"
 #shuttler's binds
 bindsym $mod+b exec --no-startup-id "chromium-browser"
 bindsym $mod+u exec --no-startup-id "/opt/Upwork/upwork"
-bindsym $mod+i exec --no-startup-id "/opt/Simplenote/simplenote --no-sandbox"
+bindsym $mod+i exec --no-startup-id "flatpak run com.notesnook.Notesnook"
 bindsym $mod+z exec i3lock --color=11121d
 floating_modifier $mod
 bindsym $mod+p exec --no-startup-id flameshot screen -p ~/Pictures/Screenshots/
