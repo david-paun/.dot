@@ -57,8 +57,8 @@ format = <label>
 label = " %output%"
 [module/custom-updates]
 type = custom/script
-exec = ~/.config/polybar/scripts/updates.sh
-interval = 60
+exec = ~/.config/polybar/scripts/updates-fedora-and-flatpak.sh
+interval = 120
 format = <label>
 label = "   %output% "
 [module/xkeyboard]
@@ -133,7 +133,7 @@ format-disconnected = <label-disconnected>
 type = internal/date
 interval = 1   
 date = " %d.%m"
-date-alt = "%A"
+date-alt = "%A "
 time = " %H:%M"
 time-alt = "%H:%M:%S"
 label = "%time%  %date% "

@@ -26,7 +26,7 @@ get_icon() {
         01n) icon="";; #
         02d) icon="";;
         02n) icon="";;
-        03d) "";; #
+        03d) icon="";; #
         03n) icon="";; #
         04d) icon=" ";; #
         04n) icon="";; #
