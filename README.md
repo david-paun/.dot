@@ -7,3 +7,5 @@ To Do:
 - kitty terminal sound
 - bash config
 - login manager config
+- redshift script
+- polybar "&" custom scripts and click events

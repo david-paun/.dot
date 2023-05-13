@@ -37,10 +37,10 @@ case $1 in
   temperature)
     case $REDSHIFT in
       on)
-        printf ""
+        echo "ON"
         ;;
       off)
-        printf ""
+        echo "OFF"
         ;;
     esac
     ;;
