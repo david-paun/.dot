@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Upwork
+Description=Upwork with Wayland Screen Sharing Support
+GenericName=Upwork Wayland
+Exec= /usr/bin/upwork-wayland-wrapper.sh
+Icon=upwork
